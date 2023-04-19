@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Test AXIT - HomePage</title>
+    <title>AXIT - HomePage</title>
 
     <!-- CSS Fontawesome -->
     <link rel="stylesheet" href="assets/fontawesome/fontawesome.min.css">
     <!-- CSS custom file -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
 </head>
 
 <body>
@@ -20,24 +21,26 @@
             <span class="navbar-toggle navbar-open"><i class="fa-solid fa-bars"></i></span>
             <span class="navbar-toggle navbar-close"><i class="fa-solid fa-xmark"></i></span>
             <div class="logo">
-                <img src="assets/images/logo.png" alt="LOGO" class="nav-logo">
+                <a href="/">
+                    <img src="assets/images/logo.png" alt="LOGO" class="nav-logo">
+                </a>
             </div>
             <nav class="menu" id="navnarMenu">
                 <ul class="list-menu">
                     <li>
-                        <a href="#feature">Features</a>
+                        <a href="#feature" class="menu-link">Features</a>
                     </li>
                     <li>
-                        <a href="#about">About</a>
+                        <a href="" class="menu-link">About</a>
                     </li>
                     <li>
-                        <a href="#pricing">Pricing</a>
+                        <a href="" class="menu-link">Pricing</a>
                     </li>
                     <li>
-                        <a href="#reviews">Reviews</a>
+                        <a href="#reviews" class="menu-link">Reviews</a>
                     </li>
                     <li>
-                        <a href="#contact">Contact</a>
+                        <a href="#contact" class="menu-link">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -47,18 +50,18 @@
                 <div class="header-layer padding-lr">
                     <div class="header-info">
                         <img src="assets/images/logo.png" alt="LOGO" class="header-logo">
-                        <h1>MODERN AXURE TEMPLATE <span><br /></span> FOR
+                        <h1 class="fadeInLeft">MODERN AXURE TEMPLATE <span><br /></span> FOR
                             BEAUTIFUL PROTOTYPES</h1>
-                        <span class="header-line"></span>
-                        <p>Lorem ipsum dolor sit amet, consectetur
+                        <span class="header-line fadeInLeft"></span>
+                        <p class="fadeInLeft">Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit. Aenean <span><br /></span>
                             euismod bibendum laoreet. Proin gravida dolor
                             sit amet lacus <span><br /></span>
                             accumsan et viverra justo commodo.
                         </p>
-                        <button class="btn btn-download">Download</button>
+                        <button class="btn btn-download fadeInLeft">Download</button>
                     </div>
-                    <div class="header-signup">
+                    <div class="header-signup fadeInRight">
                         <form action="">
                             <h3>Try Your <span>Free</span> Trial Today</h3>
                             <input type="text" placeholder="Name">
@@ -71,7 +74,7 @@
             </header>
         </div>
         <div class="tabs-area padding-lr">
-            <div class="tabs">
+            <div class="tabs fadeInBottom">
                 <div class="tablinks active" data-country="tab1">
                     <p data-title="tab1">TAB 1</p>
                 </div>
@@ -82,7 +85,7 @@
                     <p data-title="tab1">TAB 3</p>
                 </div>
             </div>
-            <div class="wp-tab-content">
+            <div class="wp-tab-content fadeInBottom">
                 <div id="tab1" class="tab-content active">
                     <h3>Tabs with soft transitioning effect.</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -132,16 +135,16 @@
                     <button class="btn btn-download-other">Download</button>
                 </div>
             </div>
-            <div class="tab-img">
+            <div class="tab-img fadeInBottom">
                 <img src="assets/images/feature-1.png" alt="Feater-1">
             </div>
         </div>
         <div id="feature" class="feature">
             <div class="feature-item padding-lr">
-                <div class="feature-image">
+                <div class="feature-image fadeInLeft">
                     <img src="assets/images/feature-2.png" alt="Feature-2">
                 </div>
-                <div class="feature-info">
+                <div class="feature-info fadeInRight">
                     <h3 class="feature-title">
                         Sub list section
                     </h3>
@@ -184,10 +187,10 @@
                 </div>
             </div>
             <div class="feature-item padding-lr">
-                <div class="feature-image">
+                <div class="feature-image fadeInLeft">
                     <img src="assets/images/feature-3.png" alt="Feature-3">
                 </div>
-                <div class="feature-info">
+                <div class="feature-info fadeInRight">
                     <h3 class="feature-title">
                         Standard Picture Section
                     </h3>
@@ -209,14 +212,14 @@
                 </div>
             </div>
         </div>
-        <div class="our-process padding-lr">
-            <div class="our-process-name">
+        <div id="reviews" class="our-process padding-lr">
+            <div class="our-process-name fadeInTop">
                 <h3 class="custom-line-center">WHY THIS IS AWESOME</h3>
                 <p class="axit-description">Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit.</p>
             </div>
             <div class="process-list">
-                <div class="process-item">
+                <div class="process-item fadeInLeft" style="animation-delay: 0.7s;">
                     <span class="process-item-icon"><i class="fa-regular
                                 fa-lightbulb"></i></span>
                     <h4>Thoughtful Design</h4>
@@ -226,7 +229,7 @@
                         dolor sit amet lacus accumsan et viverra.
                     </p>
                 </div>
-                <div class="process-item">
+                <div class="process-item fadeInLeft" style="animation-delay: 0.9s;">
                     <span class="process-item-icon"><i class="fa-regular
                                 fa-keyboard"></i></span>
                     <h4>Well Crafted</h4>
@@ -236,7 +239,7 @@
                         dolor sit amet lacus accumsan et viverra.
                     </p>
                 </div>
-                <div class="process-item">
+                <div class="process-item fadeInLeft" style="animation-delay: 1.1s;">
                     <span class="process-item-icon"><i class="fa-solid
                                 fa-bolt"></i></span>
                     <h4>Easy to Customize</h4>
@@ -248,33 +251,33 @@
                 </div>
             </div>
         </div>
-        <div class="stylist padding-lr" data-parallax="scroll" data-image-src="assets/images/custom-section.jpg">
+        <div class="stylist">
             <div class="stylist-layer">
-                <h3>STYLISH AXURE DESIGN</h3>
-                <p>Use the sections you need,
+                <h3 class="fadeInBottom">STYLISH AXURE DESIGN</h3>
+                <p class="fadeInBottom">Use the sections you need,
                     remove the ones you don't.
                     Create gorgeous prototypes faster than ever!
                 </p>
-                <button class="btn btn-download">Download</button>
+                <button class="btn btn-download fadeInBottom">Download</button>
             </div>
         </div>
         <div id="contact" class="contact padding-lr">
-            <div class="contact-head">
+            <div class="contact-head fadeInTop">
                 <h3 class="custom-line-center">CONTACT US</h3>
                 <p class="axit-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <form action="">
                 <div class="contact-form">
-                    <div class="contact-detail">
+                    <div class="contact-detail fadeInLeft">
                         <input type="text" placeholder="Name">
                         <input type="email" placeholder="Email">
                         <input type="text" placeholder="Subject">
                     </div>
-                    <div class="contact-message">
+                    <div class="contact-message fadeInRight">
                         <textarea name="" id="" placeholder="Message"></textarea>
                     </div>
                 </div>
-                <button class="btn btn-download-other btn-send" type="submit">Send Message</button>
+                <button class="btn btn-download-other btn-send fadeInBottom" type="submit">Send Message</button>
             </form>
         </div>
         <footer>
@@ -292,12 +295,7 @@
         </footer>
     </div>
 
-
-
-    <script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="assets/js/all.min.js"></script>
-    <script src="assets/js/parallax.min.js"></script>
-
     <script src="assets/js/main.js"></script>
     <script src="assets/js/tabs.js"></script>
 </body>

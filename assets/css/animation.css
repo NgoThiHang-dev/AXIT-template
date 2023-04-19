@@ -1,0 +1,28 @@
+.fadeInLeft {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fadeInRight {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fadeInTop {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fadeInBottom {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fadeIn {
+  opacity: 1;
+  transform: translate(0, 0);
+}

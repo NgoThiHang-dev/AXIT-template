@@ -7,6 +7,10 @@
   -webkit-box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   max-width: 1920px;
@@ -21,11 +25,6 @@ ul {
 a {
   text-decoration: none;
 }
-
-/* img {
-  display: block;
-  max-width: 100%;
-} */
 
 input {
   border: none;
@@ -161,6 +160,10 @@ input::placeholder {
   color: #ff8b38;
 }
 
+.navbar .list-menu li a.active {
+  color: #ff8b38;
+}
+
 .navbar-open,
 .navbar-close {
   display: none;
@@ -193,7 +196,7 @@ input::placeholder {
   font-size: 36px;
   font-weight: normal;
   margin-top: 28px;
-  animation: fadeInRight 1s ease-in-out;
+  /* animation: fadeInRight 1s ease-in-out; */
 }
 
 .header-info .header-line {
@@ -391,6 +394,10 @@ input::placeholder {
   width: 80%;
 }
 
+.feature-image img:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
 .feature-title {
   font-size: 20px;
 }
@@ -462,8 +469,25 @@ input::placeholder {
 }
 
 .process-item {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 20px 15px;
+  width: calc(33.33% - 15px);
+}
+
+.process-item:hover {
+  background-color: #ff8b38;
+  border-radius: 4px;
+  color: white;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.process-item:hover .process-item-icon {
+  color: white;
+  border: 2px solid white;
+}
+
+.process-item:hover p {
+  color: white;
 }
 
 .process-item .process-item-icon {
@@ -484,11 +508,20 @@ input::placeholder {
 
 .stylist {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.55);
   text-align: center;
+  background-image: url("../images/custom-section.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.stylist:hover .stylist-layer {
+  background-color: rgba(0, 0, 0, 0.35);
+  transition: all linear 0.3;
 }
 
 .stylist-layer {
+  background-color: rgba(0, 0, 0, 0.5);
   padding-top: 70px;
   padding-bottom: 70px;
   color: white;
@@ -594,14 +627,4 @@ input::placeholder {
   color: lightgray;
   font-size: 14px;
   margin-top: 10px;
-}
-
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translateX(300px);
-  }
-  to {
-    opacity: 1;
-  }
 }
