@@ -10,18 +10,7 @@ document.querySelectorAll(".menu-link").forEach((ele) =>
 );
 
 // scroll smooth
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function (e) {
-        e.preventDefault();
-        const elHref = document.querySelector(this.getAttribute("href"));
-        if (elHref && document.getElementById(this.getAttribute("href").substring(1))) {
-            elHref.scrollIntoView({
-                behavior: "smooth"
-            });
-        }
-    });
-});
-
+const screenWidth = window.innerWidth;
 //responsive navbar
 var openNarbar = document.querySelector(".navbar-open");
 var closeNarbar = document.querySelector(".navbar-close");
@@ -41,6 +30,25 @@ closeNarbar.addEventListener("click", function () {
     navbar.style.top = "70px";
     openNarbar.style.display = "block";
     closeNarbar.style.display = "none";
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        const elHref = document.querySelector(this.getAttribute("href"));
+        if (elHref && document.getElementById(this.getAttribute("href").substring(1))) {
+            elHref.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+        if (screenWidth < 769) {
+            navbar.style.visibility = "hidden";
+            navbar.style.opacity = "0";
+            navbar.style.top = "70px";
+            openNarbar.style.display = "block";
+            closeNarbar.style.display = "none";
+        }
+    });
 });
 
 // animation
